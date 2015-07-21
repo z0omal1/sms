@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для построения отчета</title>
+</head>
+<body link="black" vlink="#2B2E34" alink="#2B2E34">
+<p><img src="../static/index.png"><a href="/"></a></img></p>
+{% block content %}
+<h3 style="color:#2B2E34">Построение отчета</h3>
+<form action="/result" method="post" name="report">
+    <p style="color:#2B2E34">Номер телефона: {{form.subscriber}}</p>
+    <p style="color:#2B2E34">Сервисный номер: {{form.serviceNumber}}</p>
+    <p style="color:#2B2E34">Дата с: {{form.timestamp_start}}</p>
+    <p style="color:#2B2E34">Дата по: {{form.timestamp_finish}}</p>
+    <p style="color:#2B2E34">Статус: {{form.status}}</p>
+    <p style="color:#2B2E34"><input type="submit" value="Отчет"></p>
+</form>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отчет</title>
+</head>
+<body link="black" vlink="#2B2E34" alink="#2B2E34">
+<p><a href="/"><img src="../static/index.png"></img></a></p>
+<table width="80%" cellspacing="0" cellpadding="4" border="1" align="center">
+    <tr><th>id</th><th>subscriber</th><th>serviceNumber</th><th>reporttime</th><th>timestamp</th><th>status</th></tr>
+{% for result in results %}
+    <tr><th>{{ result.id }}</th><th>{{ result.subscriber}}</th><th>{{ result.serviceNumber}}</th><th>{{ result.reporttime}}</th><th>{{ result.timestamp}}</th><th>{{ result.status}}</th></tr>
+{% endfor %}
+</table>
+<div align="center"><p><a href="/download">Скачать</a></p></div>
+</body>
+</html>

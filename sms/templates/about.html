@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>О сервисе</title>
+    </head>
+    <body link="black" vlink="#2B2E34" alink="#2B2E34">
+        <p><a href="/"><img src="../static/index.png"></img></a></p>
+        <p><a href="/report">Построение отчета</a></p>
+        <style type="text/css">
+            #about {
+            color: #2B2E34;
+    	    }
+	</style>
+        <div id="about">
+        <p><b>Сервис предназначен для приема статусов доставки sms-сообещений от провайдера sms-шлюза. Карта сайта представляет собой следующий набор роутов:</b></p>
+	<p><b><i>/send </b></i>- предназначен для приема данных от провайдера. Параметры записи передаются через url с валидацией, в случае успеха записываются в БД</p>
+	<p><b><i>/report </b></i>- предназначен для формирования отчета. Поля формы подставляются в WHERE секцию SQL запроса</p>
+	<p><b><i>/result </b></i>- предназначен для вывода результата запроса, сформированного в /report роуте, в виде таблицы с возможностью сохранения в xls</p>
+	<p><b><i>/download </b></i>- служебный роут для скачивания сгенерированного налету отчета</p>
+    </body>
+</html>
